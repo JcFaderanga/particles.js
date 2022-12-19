@@ -1,0 +1,140 @@
+<DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+   JC Faderanga
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--------------------------------------------->
+                   <!--ICONS-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--------------------------------------------->
+
+    <!--------------------------------------------->
+                   <!--FONTS-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+    </style>
+    <!--------------------------------------------->
+
+  <!--------------------------------------------->
+                  <!--MAIN CSS-->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="pc-main.css"> 
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!--------------------------------------------->
+
+</head>
+<body >
+  <div id="particle-js"></div>
+
+    <header>
+      <div class="navbar">
+        <nav class="nav-content">
+          <ul>
+            <li id="li-home">
+              <a href="#" id="home" onclick="home()"><i class='bx bx-home'></i></a>
+            </li>
+
+            <li id="li-profile">
+              <a href="#" id="profile" onclick="profile()"><i class='bx bx-user'></i></a>
+            </li>
+
+            <li id="li-studies">
+              <a href="#" id="studies" onclick="studies()"><i class='bx bx-book-bookmark'></i></a>
+            </li>
+
+            <li id="li-message">
+              <a href="#" id="message" onclick="message()"><i class='bx bx-chat'></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+  <main>
+    <div class="main-container"> 
+        <div class="main-content-home">
+             <div class="profile-img">
+               <img class="profile" src="profile2.jpg" alt="profile">
+             </div>
+             <div class="name-des-pc">
+             <div class="profile-name">
+               <h1> JC Faderanga</h1>
+             </div> 
+               <div class="description">
+                <span>Aspiring <span style="font-weight: 700">Web Developer</span> from Philippines</span>
+               </div>
+              </div>
+        </div>
+    
+          <div class="main-link">
+         
+            <ul>
+             
+               <li>
+                 <a href="https://www.facebook.com/janreycyril.faderanga"> <i class='bx bxl-facebook-circle' ></i> </a>
+              </li>
+              <li>
+                 <a href="https://github.com/JcFaderanga"> <i class='bx bxl-instagram-alt'></i> </a>
+              </li>
+              <li>
+                 <a href="https://www.instagram.com/jeysi_faderanga/"> <i class='bx bxl-github'></i> </a>
+              </li>
+            </ul>
+         </div>
+   </div>
+
+  </main>
+  </div>
+  <script src="particle.js"></script>
+  <script type="text/javascript">
+    
+    function home() {
+      document.getElementById('li-home').style.background="#323232";
+      document.getElementById('home').style.color="white";
+
+      document.getElementById('li-profile').style.background="";
+      document.getElementById('profile').style.color="";
+      document.getElementById('studies').style.color="";
+      document.getElementById('message').style.color="";
+    }
+    function profile() {
+      document.getElementById('li-home').style.background="white";
+      document.getElementById('home').style.color="#323232";
+
+      document.getElementById('li-profile').style.background="#323232";
+      document.getElementById('profile').style.color="#fff";
+      document.getElementById('studies').style.color="";
+      document.getElementById('message').style.color="";
+    }
+    function studies() {
+      document.getElementById('li-home').style.background="white";
+      document.getElementById('li-home').style.color="#323232";
+
+      document.getElementById('li-profile').style.background="white";
+      document.getElementById('profile').style.color="#323232";
+
+      document.getElementById('studies').style.color="white";
+      document.getElementById('li-studies').style.background="#323232";
+
+      document.getElementById('home').style.color="#cbf7ed";
+      document.getElementById('profile').style.color="";
+      
+      document.getElementById('message').style.color="";
+    }
+    function message() {
+      document.getElementById('home').style.color="#cbf7ed";
+      document.getElementById('profile').style.color="";
+      document.getElementById('studies').style.color="";
+      document.getElementById('message').style.color="green";
+    }
+
+
+  </script>
+<script src="particle.jc"></script>
+</body>
+</html>
